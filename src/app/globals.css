@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+/* Brand Colors */
+:root {
+  --color-primary: #00D1B2;
+  --color-secondary: #7B61FF;
+  --color-tertiary: #0A192F;
+  --color-accent: #E5E7EB;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-text-primary: #0A192F;
+  --color-text-secondary: #4b5563;
+  --color-border: #e5e7eb;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-tertiary: #f9fafb;
+  --color-accent: #374151;
+  --color-bg-primary: #111827;
+  --color-bg-secondary: #1f2937;
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #d1d5db;
+  --color-border: #374151;
+}
+
+/* Font Families */
+@theme {
+  --font-family-inter: var(--font-inter), sans-serif;
+  --font-family-heading: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-family-mono: var(--font-montserrat), monospace;
+}
+
+/* Base Styles */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-inter) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat), monospace, system-ui, sans-serif !important;
+  font-weight: 700;
+}
+
+.font-heading {
+  font-family: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif !important;
+}
+
+/* Typography */
+.heading-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Backgrounds */
+.bg-gradient-brand {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #3AA7F5 50%, var(--color-secondary) 100%);
+}
+
+.bg-gradient-radial-primary {
+  background: radial-gradient(circle at center, rgba(0, 209, 178, 0.1) 0%, transparent 70%);
+}
+
+.dark .bg-gradient-radial-primary {
+  background: radial-gradient(circle at center, rgba(0, 209, 178, 0.2) 0%, transparent 70%);
+}
+
+.bg-gradient-radial-secondary {
+  background: radial-gradient(circle at center, rgba(123, 97, 255, 0.1) 0%, transparent 70%);
+}
+
+.dark .bg-gradient-radial-secondary {
+  background: radial-gradient(circle at center, rgba(123, 97, 255, 0.2) 0%, transparent 70%);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 209, 178, 0.4);
+}
+
+.btn-outline {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 209, 178, 0.3);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 50;
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.25rem; }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+}
