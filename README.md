@@ -21,7 +21,7 @@ A modern, responsive landing page built with Next.js 14, TypeScript, and Tailwin
 
 ## 📦 Tech Stack
 
-- **Framework**: Next.js 14+
+- **Framework**: Next.js 16+
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Package Manager**: npm
@@ -30,7 +30,7 @@ A modern, responsive landing page built with Next.js 14, TypeScript, and Tailwin
 
 ### Prerequisites
 
-- Node.js 18+ installed
+- Node.js 22+ installed
 - npm or yarn
 
 ### Installation

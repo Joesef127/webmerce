@@ -18,12 +18,12 @@ export default function Heading({
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
   
   const baseStyles = {
-    1: "text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight",
-    2: "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight",
-    3: "text-2xl sm:text-3xl md:text-4xl font-bold leading-snug",
-    4: "text-xl sm:text-2xl md:text-3xl font-bold leading-snug",
-    5: "text-lg sm:text-xl md:text-2xl font-bold",
-    6: "text-base sm:text-lg md:text-xl font-bold",
+    1: "text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-bold leading-tight",
+    2: "text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight",
+    3: "text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-snug",
+    4: "text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-snug",
+    5: "text-base xs:text-lg sm:text-xl md:text-2xl font-bold",
+    6: "text-sm xs:text-base sm:text-lg md:text-xl font-bold",
   };
   
   const alignStyles = {

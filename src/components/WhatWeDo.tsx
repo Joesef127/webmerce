@@ -5,10 +5,15 @@ import Section from "@/components/ui/Section";
 import Container from "@/components/ui/Container";
 
 export default function WhatWeDo() {
-  const keyPoints = [
-    "Analyze product reviews, comments & support data",
-    "Uncover emotional & behavioral insights",
-    "Help DTC & FBA brands make data-driven decisions",
+  const transforms = [
+    "Composite Trust Scores (beyond star ratings)",
+    "Quarter-over-quarter trust momentum",
+    "Evidence-backed explanations",
+    "Risk detection and alerts",
+  ];
+
+  const questions = [
+    { old: "Are reviews positive?", new: "Is customer trust strengthening or weakening and why?" }
   ];
 
   return (
@@ -41,26 +46,32 @@ export default function WhatWeDo() {
           {/* Right - Content */}
           <div className="space-y-4 sm:space-y-6">
             <Heading level={2}>
-              What We <span className="heading-gradient">Do:</span>
+              What We <span className="heading-gradient">Do</span>
             </Heading>
             
             <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
-              Webmerce Analytics transforms customer feedback into growth intelligence. 
-              By analyzing product reviews, comments, and support data, we uncover emotional 
-              and behavioral insights that help DTC and FBA brands reduce returns, improve 
-              retention, and make smarter product decisions.
+              Webmerce Analytics transforms customer reviews into quarterly trust intelligence, combining:
             </p>
             
-            {/* Key Points */}
-            <div className="space-y-3 sm:space-y-4 pt-4">
-              {keyPoints.map((point, index) => (
+            {/* Transforms List */}
+            <div className="space-y-3 sm:space-y-4 pt-2">
+              {transforms.map((item, index) => (
                 <div key={index} className="flex items-start space-x-3">
                   <div className={`w-6 h-6 ${index % 2 === 0 ? 'bg-[var(--color-primary)]' : 'bg-[var(--color-secondary)]'} rounded-full flex items-center justify-center flex-shrink-0 mt-1`}>
                     <Check className="w-4 h-4 text-white" strokeWidth={3} />
                   </div>
-                  <p className="text-sm sm:text-base text-gray-300">{point}</p>
+                  <p className="text-sm sm:text-base text-gray-300">{item}</p>
                 </div>
               ))}
+            </div>
+
+            {/* Questions Comparison */}
+            <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-white/5 rounded-xl border border-white/10">
+              <p className="text-sm text-gray-400 mb-2 line-through">Instead of asking:</p>
+              <p className="text-base sm:text-lg text-gray-300 mb-4 italic">&quot;{questions[0].old}&quot;</p>
+              
+              <p className="text-sm text-[var(--color-primary)] mb-2">We answer:</p>
+              <p className="text-base sm:text-lg text-white font-semibold italic">&quot;{questions[0].new}&quot;</p>
             </div>
           </div>
         </div>

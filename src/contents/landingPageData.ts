@@ -1,51 +1,176 @@
 export const brandValues = [
   {
-    title: "Intelligent",
+    title: "Trust, not sentiment",
     color: "primary" as const,
-    description: "Advanced AI-powered analytics that understand context and nuance",
+    description: "We measure confidence and reliability — not just emotion",
   },
   {
-    title: "Empathetic",
+    title: "Evidence-first AI",
     color: "secondary" as const,
-    description: "Deep emotional intelligence to capture the human side of data",
+    description: "Every conclusion references real customer language",
   },
   {
-    title: "Visionary",
+    title: "Quarterly intelligence",
     color: "tertiary" as const,
-    description: "Forward-thinking insights that shape future product strategies",
+    description: "Detect slow-burn problems before they explode",
   },
 ];
 
-export const features = [
+export const whoItsFor = [
   {
-    title: "Emotion Analytics",
-    description:
-      "Advanced sentiment analysis that goes beyond positive/negative to understand complex emotional patterns in customer feedback",
+    title: "Shopify & WooCommerce brands",
+    description: "Product-level trust health and UX friction detection",
   },
   {
-    title: "Behavioral Insights",
-    description:
-      "Identify purchase patterns, return triggers, and customer pain points to optimize your product strategy",
+    title: "Amazon FBA sellers",
+    description: "Defect pressure detection and listing-level risk flags",
   },
   {
-    title: "Return Reduction",
-    description:
-      "Pinpoint the root causes of returns and get actionable recommendations to reduce them significantly",
+    title: "E-commerce / Marketing agencies",
+    description: "Portfolio-wide trust monitoring with white-label reports",
   },
   {
-    title: "Product Intelligence",
-    description:
-      "Make smarter product decisions based on real customer emotions and experiences, not just ratings",
+    title: "DTC founders & CX teams",
+    description: "Executive-ready trust briefings and early warning alerts",
+  },
+];
+
+export const coreProductFeatures = [
+  {
+    title: "Composite Trust Score",
+    description: "Per product, per quarter — beyond simple star ratings",
   },
   {
-    title: "Growth Acceleration",
-    description:
-      "Turn negative feedback into growth opportunities by understanding what customers really want",
+    title: "QoQ Trust Change",
+    description: "Momentum detection to catch trends early",
   },
   {
-    title: "Customer Retention",
+    title: "Risk Level",
+    description: "Low / medium / high classification",
+  },
+  {
+    title: "Evidence Phrases",
+    description: "Real customer language, never fabricated",
+  },
+  {
+    title: "Explainable Reports",
+    description: "No black-box AI — full transparency",
+  },
+];
+
+export const exampleSignals = [
+  "Zip broke after one week",
+  "Sole separating",
+  "Too rigid, uncomfortable after long wear",
+  "Never buying again",
+];
+
+export const whyDifferent = [
+  {
+    title: "Trust, not sentiment",
+    description: "We measure confidence and reliability — not just emotion.",
+  },
+  {
+    title: "Evidence-first AI",
+    description: "Every conclusion references real customer language.",
+  },
+  {
+    title: "Quarterly intelligence",
+    description: "Detect slow-burn problems before they explode.",
+  },
+  {
+    title: "Agent-based architecture",
+    description: "Built for scale, automation, and future expansion.",
+  },
+];
+
+export const clientOutputs = [
+  {
+    icon: "Store",
+    title: "Shopify & WooCommerce Brands",
+    features: [
+      "Product-level trust health",
+      "UX friction vs real risk",
+      "Retention and CX insights",
+    ],
+  },
+  {
+    icon: "Package",
+    title: "Amazon FBA Sellers",
+    features: [
+      "Defect pressure detection",
+      "Listing-level risk flags",
+      "Evidence for supplier escalation",
+    ],
+  },
+  {
+    icon: "Brain",
+    title: "E-Commerce Agencies",
+    features: [
+      "Portfolio-wide trust monitoring",
+      "White-label client reports",
+      "Retention-driven insights",
+    ],
+  },
+  {
+    icon: "Building",
+    title: "Internal Brand Teams",
+    features: [
+      "Quarterly trust briefings",
+      "Executive-ready reports",
+      "Early warning alerts",
+    ],
+  },
+];
+
+export const upcomingProducts = [
+  {
+    icon: "Layers",
+    title: "Product Line Intelligence",
     description:
-      "Improve retention by proactively addressing issues before they lead to churn",
+      "Understand how trust performs across product families, not just individual SKUs.",
+    action: "Identify",
+    features: [
+      "Which collections are strengthening customer confidence",
+      "Which variants quietly accumulate friction",
+      "Where trust erosion begins before it impacts revenue",
+    ],
+  },
+  {
+    icon: "BarChart3",
+    title: "Category Health Intelligence",
+    description:
+      "Track category-level trust signals to understand broader customer expectations and risks.",
+    action: "Detect",
+    features: [
+      "Emerging category-wide issues",
+      "Shifts in customer standards",
+      "Early warning signs affecting multiple brands",
+    ],
+  },
+  {
+    icon: "Target",
+    title: "Brand Competitiveness Intelligence",
+    description:
+      "Benchmark your brand's trust performance against category competitors.",
+    action: "Compare",
+    features: [
+      "Trust momentum",
+      "Evidence-backed strengths and weaknesses",
+      "Relative risk positioning over time",
+    ],
+  },
+  {
+    icon: "AlertTriangle",
+    title: "Risk & Failure Intelligence",
+    description:
+      "Detect early indicators of product failure, quality risk, and trust collapse before it becomes costly.",
+    action: "Surface",
+    features: [
+      "Defect pressure signals",
+      "Escalating complaint patterns",
+      "Trust degradation trajectories",
+    ],
   },
 ];
 
@@ -82,54 +207,45 @@ export const howItWorksSteps = [
 
 export const benefits = [
   {
-    stat: "34%",
-    label: "Average Return Reduction",
-    description: "Clients see significant decreases in product returns within 90 days",
+    stat: "Quarterly",
+    label: "Trust Intelligence",
+    description: "Detect slow-burn problems before they explode into revenue loss",
     color: "primary" as const,
   },
   {
-    stat: "2.5x",
-    label: "ROI in First Year",
-    description: "Average return on investment from reduced returns and increased retention",
+    stat: "100%",
+    label: "Evidence-Backed",
+    description: "Every insight references real customer language — never fabricated",
     color: "secondary" as const,
   },
   {
-    stat: "92%",
-    label: "Customer Retention",
-    description: "Brands using our insights retain more customers long-term",
+    stat: "Agent-Based",
+    label: "Architecture",
+    description: "Built for scale, automation, and future product expansion",
     color: "tertiary" as const,
-  },
-  {
-    stat: "10K+",
-    label: "Reviews Analyzed Daily",
-    description: "Process thousands of customer interactions in real-time",
-    color: "primary" as const,
   },
 ];
 
 export const navigationLinks = [
-  {label: "What We Do", href: "#what-we-do"},
-  { label: "Features", href: "#features" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Benefits", href: "#benefits" },
+  { label: "What We Do", href: "#what-we-do" },
+  { label: "Core Product", href: "#core-product" },
+  { label: "Why Different", href: "#why-different" },
+  { label: "Upcoming Products", href: "#upcoming-products" },
 ];
 
 export const footerLinks = {
   product: [
-    { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#" },
-    { label: "Use Cases", href: "#" },
-    { label: "Integrations", href: "#" },
+    { label: "Core Product", href: "#core-product" },
+    { label: "Upcoming Products", href: "#upcoming-products" },
+    { label: "Request Demo", href: "#demo-request" },
   ],
   company: [
-    { label: "About", href: "#" },
-    { label: "Blog", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "About Us", href: "#about" },
+    { label: "Founder Story", href: "#founder-story" },
+    { label: "Contact", href: "mailto:hello@webmerce.ai" },
   ],
   legal: [
     { label: "Privacy Policy", href: "#" },
     { label: "Terms of Service", href: "#" },
-    { label: "Cookie Policy", href: "#" },
   ],
 };
