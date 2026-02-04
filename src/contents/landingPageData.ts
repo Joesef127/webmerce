@@ -227,10 +227,10 @@ export const benefits = [
 ];
 
 export const navigationLinks = [
-  { label: "What We Do", href: "#what-we-do" },
-  { label: "Core Product", href: "#core-product" },
-  { label: "Why Different", href: "#why-different" },
-  { label: "Upcoming Products", href: "#upcoming-products" },
+  { label: "Overview", href: "#what-we-do" },
+  { label: "Product", href: "#core-product" },
+  { label: "Why", href: "#why-different" },
+  { label: "Upcoming", href: "#upcoming-products" },
 ];
 
 export const footerLinks = {
