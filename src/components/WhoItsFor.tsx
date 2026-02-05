@@ -25,7 +25,7 @@ export default function WhoItsFor() {
             return (
               <div
                 key={item.title}
-                className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-[var(--color-primary)] group"
+                className="bg-white dark:bg-gray-800 p-4 sm:p-5 lg:p-4 xl:p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-[var(--color-primary)] group"
               >
                 <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-brand rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
                   <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" strokeWidth={2} />

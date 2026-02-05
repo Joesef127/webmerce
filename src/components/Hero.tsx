@@ -1,4 +1,4 @@
-import {Shield, Play, TrendingUp} from "lucide-react";
+import {Shield, Clock, TrendingUp} from "lucide-react";
 import Button from "@/components/ui/Button";
 import Heading from "@/components/ui/Heading";
 import Section from "@/components/ui/Section";
@@ -16,8 +16,7 @@ export default function Hero() {
       <div
         className="absolute bottom-5 xs:bottom-10 sm:bottom-20 left-3 xs:left-5 sm:left-10 w-40 xs:w-64 sm:w-96 h-40 xs:h-64 sm:h-96 bg-[var(--color-secondary)]/10 dark:bg-[var(--color-secondary)]/20 rounded-full blur-3xl"></div>
 
-      <Container size="lg"
-                 className="relative z-10 flex flex-col lg:grid grid-cols-2 gap-14 justify-center items-center">
+      <Container size="lg" className="relative z-10 flex flex-col lg:grid grid-cols-2 gap-14 justify-center items-center">
         {/* Left Column - Text Content */}
         <div className="space-y-4 xs:space-y-5 sm:space-y-6 md:space-y-8">
           <Badge icon={Shield}>
@@ -50,10 +49,10 @@ export default function Hero() {
 
           <div className="flex flex-col justify-center sm:justify-start sm:flex-row gap-2.5 xs:gap-3 sm:gap-4">
             <Button variant="filled" size="md" icon={TrendingUp}>
-              Request Demo Access
+              <a className="w-full h-full" href="#demo-request">Request Demo Access</a>
             </Button>
-            <Button variant="outline" size="md" icon={Play}>
-              Watch Demo
+            <Button variant="outline" size="md" icon={Clock}>
+              <a className="w-full h-full" href="#early-access">Request Early Access</a>
             </Button>
           </div>
 
