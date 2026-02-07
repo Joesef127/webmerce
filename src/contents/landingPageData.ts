@@ -1,18 +1,15 @@
 export const brandValues = [
   {
-    title: "Trust, not sentiment",
+    title: "Built on real customer reviews",
     color: "primary" as const,
-    description: "We measure confidence and reliability — not just emotion",
   },
   {
-    title: "Evidence-first AI",
+    title: "Evidence-backed insights",
     color: "secondary" as const,
-    description: "Every conclusion references real customer language",
   },
   {
-    title: "Quarterly intelligence",
+    title: "Designed for early risk detection",
     color: "tertiary" as const,
-    description: "Detect slow-burn problems before they explode",
   },
 ];
 
@@ -249,3 +246,35 @@ export const footerLinks = {
     { label: "Terms of Service", href: "#" },
   ],
 };
+
+export const faqItems = [
+  {
+    question: "Is this just sentiment analysis?",
+    answer: "No. Sentiment analysis measures emotions — we measure trust reliability. We focus on whether customers have confidence in your product, quality, and reliability. That's fundamentally different from whether they're 'happy' or 'sad'. Trust predicts behavior: retention, repeat purchases, and word-of-mouth.",
+  },
+  {
+    question: "How is trust score calculated?",
+    answer: "Our Trust Score combines multiple signals: product quality confidence, shipping/delivery reliability, customer service responsiveness, and value perception. It's calculated per product, per quarter, using structured KPIs and evidence phrases from real customer language. Every score is backed by verbatim references — nothing is fabricated.",
+  },
+  {
+    question: "Does it work across categories / variants?",
+    answer: "Yes. Our system is designed to work across product categories and variants. You can track trust at the individual product level, variant level, or aggregate up to category or brand level. This is essential for multi-category brands, FBA sellers, and agencies managing diverse portfolios.",
+  },
+  {
+    question: "How long to onboard?",
+    answer: "Typical onboarding takes 1-2 weeks from kickoff. This includes connecting your data sources (e-commerce platform, review systems, support tickets), configuring custom trust metrics, and your team learning the platform. Faster for simpler integrations, longer if you have complex data requirements.",
+  },
+  {
+    question: "Do you integrate with my stack?",
+    answer: "We integrate with major platforms: Amazon, Shopify, WooCommerce, review platforms (Trustpilot, Yotpo, Judge.me), support systems (Zendesk, Intercom), and analytics tools. If you use other platforms, we offer API access and CSV import options. Contact us for specific compatibility.",
+  },
+  {
+    question: "What about privacy / compliance?",
+    answer: "Privacy and compliance are non-negotiable. We comply with GDPR, CCPA, and other regulations. We don't store unnecessary personal data, encrypt all data in transit and at rest, undergo regular security audits, and provide data processing agreements. For regulated industries, we can discuss specific requirements.",
+  },
+  {
+    question: "What does it cost?",
+    answer: "Pricing is based on review volume, number of products, and features needed. We offer flexible plans for brands, agencies, and enterprises. Custom pricing is available for high-volume users. We recommend starting with a discovery call to understand your needs and provide an accurate quote.",
+  },
+];
+

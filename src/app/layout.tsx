@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Outfit, Montserrat } from "next/font/google";
+import { Inter, Archivo } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { Analytics } from "@vercel/analytics/next"
@@ -10,15 +10,9 @@ const inter = Inter({
   display: "swap",
 });
 
-const outfit = Outfit({ 
+const archivo = Archivo({ 
   subsets: ["latin"],
-  variable: "--font-outfit",
-  display: "swap",
-});
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
+  variable: "--font-archivo",
   display: "swap",
 });
 
@@ -58,7 +52,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${outfit.variable} ${montserrat.variable} font-sans antialiased`} suppressHydrationWarning>
+      <body className={`${inter.variable} ${archivo.variable} font-sans antialiased`} suppressHydrationWarning>
         <ThemeProvider>
           {children}
         </ThemeProvider>

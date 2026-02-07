@@ -29,8 +29,7 @@
 /* Font Families */
 @theme {
   --font-family-inter: var(--font-inter), sans-serif;
-  --font-family-heading: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
-  --font-family-mono: var(--font-montserrat), monospace;
+  --font-family-heading: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Base Styles */
@@ -41,17 +40,17 @@
 body {
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
-  font-family: var(--font-family-inter) !important;
+  font-family: var(--font-inter) !important;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-montserrat), monospace, system-ui, sans-serif !important;
+  font-family: var(--font-archivo), sans-serif, system-ui !important;
   font-weight: 700;
 }
 
 .font-heading {
-  font-family: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif !important;
+  font-family: var(--font-archivo), ui-sans-serif, system-ui, sans-serif !important;
 }
 
 /* Typography */
