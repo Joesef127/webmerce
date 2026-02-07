@@ -47,9 +47,9 @@ export default function ProofBar() {
   ];
 
   return (
-    <Section id="platforms" background="white">
+    <Section id="platforms" background="gray">
       <Container>
-        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+        <div className="text-center mb-6">
           <Badge icon={Layers}>Platform Support</Badge>
         </div>
 
