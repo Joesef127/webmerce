@@ -35,7 +35,7 @@ export const whoItsFor = [
 export const coreProductFeatures = [
   {
     title: "Composite Trust Score",
-    description: "Per product, per quarter — beyond simple star ratings",
+    description: "Per product, per quarter, beyond simple star ratings",
   },
   {
     title: "QoQ Trust Change",
@@ -51,7 +51,7 @@ export const coreProductFeatures = [
   },
   {
     title: "Explainable Reports",
-    description: "No black-box AI — full transparency",
+    description: "No black-box AI, full transparency",
   },
 ];
 
@@ -65,7 +65,7 @@ export const exampleSignals = [
 export const whyDifferent = [
   {
     title: "Trust, not sentiment",
-    description: "We measure confidence and reliability — not just emotion.",
+    description: "We measure confidence and reliability, not just emotion.",
   },
   {
     title: "Evidence-first AI",
@@ -212,7 +212,7 @@ export const benefits = [
   {
     stat: "100%",
     label: "Evidence-Backed",
-    description: "Every insight references real customer language — never fabricated",
+    description: "Every insight references real customer language, never fabricated",
     color: "secondary" as const,
   },
   {
@@ -250,11 +250,11 @@ export const footerLinks = {
 export const faqItems = [
   {
     question: "Is this just sentiment analysis?",
-    answer: "No. Sentiment analysis measures emotions — we measure trust reliability. We focus on whether customers have confidence in your product, quality, and reliability. That's fundamentally different from whether they're 'happy' or 'sad'. Trust predicts behavior: retention, repeat purchases, and word-of-mouth.",
+    answer: "No. Sentiment analysis measures emotions, we measure trust reliability. We focus on whether customers have confidence in your product, quality, and reliability. That's fundamentally different from whether they're 'happy' or 'sad'. Trust predicts behavior: retention, repeat purchases, and word-of-mouth.",
   },
   {
     question: "How is trust score calculated?",
-    answer: "Our Trust Score combines multiple signals: product quality confidence, shipping/delivery reliability, customer service responsiveness, and value perception. It's calculated per product, per quarter, using structured KPIs and evidence phrases from real customer language. Every score is backed by verbatim references — nothing is fabricated.",
+    answer: "Our Trust Score combines multiple signals: product quality confidence, shipping/delivery reliability, customer service responsiveness, and value perception. It's calculated per product, per quarter, using structured KPIs and evidence phrases from real customer language. Every score is backed by verbatim references, nothing is fabricated.",
   },
   {
     question: "Does it work across categories / variants?",
