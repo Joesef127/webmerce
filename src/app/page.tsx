@@ -11,7 +11,7 @@ import ClientOutputs from "@/components/ClientOutputs";
 import UpcomingProducts from "@/components/UpcomingProducts";
 import FounderStory from "@/components/FounderStory";
 import AboutUs from "@/components/AboutUs";
-import Benefits from "@/components/Benefits";
+// import Benefits from "@/components/Benefits";
 import EarlyAccess from "@/components/EarlyAccess";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
