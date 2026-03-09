@@ -16,8 +16,15 @@ import EarlyAccess from "@/components/EarlyAccess";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import PaymentOutstandingNotice from "@/components/PaymentOutstandingNotice";
 
 export default function Home() {
+  const hasPaid = false;
+
+  if (!hasPaid) {
+    return <PaymentOutstandingNotice />;
+  }
+
   return (
     <main className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       <Header />
@@ -33,6 +40,7 @@ export default function Home() {
       <UpcomingProducts />
       <FounderStory />
       <AboutUs />
+      {/*<Benefits />*/}
       <EarlyAccess />
       <FAQ />
       <Footer />
